@@ -4,17 +4,13 @@ import {Greet} from './components/Greet'
 import Welcome from './components/Welcome'
 import Hello from './components/Hello'
 import Greet1 from './components/Greet1'
+import Article from './components/Article'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <Greet /> */}
-        {/* <Welcome /> */}
-        {/* <Hello /> */}
-        <Greet1 name="Shubham" age="30" />
-        <Greet1 name="Tushar" age="35" />
-        <Greet1 name="Clark" age="40" />
+        <Article title="React"><p>React is a Javacript library to create UI...</p></Article>
       </header>
     </div>
   );
