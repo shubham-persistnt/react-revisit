@@ -5,12 +5,13 @@ import Welcome from './components/Welcome'
 import Hello from './components/Hello'
 import Greet1 from './components/Greet1'
 import Article from './components/Article'
+import WelcomeVisitor from './components/WelcomeVisitor'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Article title="React"><p>React is a Javacript library to create UI...</p></Article>
+        <WelcomeVisitor />
       </header>
     </div>
   );
