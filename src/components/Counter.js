@@ -8,20 +8,16 @@ class Counter extends Component{
   	}
   }
 
-  incrementCount(){
-    this.setState(prevState => ({ count: prevState.count + 1 }))
-  }
-
-  incrementFive(){
- 		this.setState(prevState => ({ count: prevState.count + 5 }))
+  increment(incrementBy){
+    this.setState(prevState => ({ count: prevState.count + incrementBy }))
   }
 
   render(){
   	return(
   		<div>
   			<div>Count : {this.state.count}</div>
-  			<button onClick={()=>this.incrementCount()}>increment count</button>
-        <button onClick={()=>this.incrementFive()}>increment 5</button>
+  			<button onClick={()=>this.increment(1)}>increment count</button>
+        <button onClick={()=>this.increment(5)}>increment 5</button>
   		</div>
   	)
   }
