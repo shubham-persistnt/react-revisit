@@ -6,12 +6,14 @@ import Hello from './components/Hello'
 import Greet1 from './components/Greet1'
 import Article from './components/Article'
 import WelcomeVisitor from './components/WelcomeVisitor'
+import Counter from './components/Counter'
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <WelcomeVisitor />
+        <Counter />
       </header>
     </div>
   );
