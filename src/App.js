@@ -7,15 +7,18 @@ import Greet1 from './components/Greet1'
 import Article from './components/Article'
 import WelcomeVisitor from './components/WelcomeVisitor'
 import Counter from './components/Counter'
+import FunctionClick from './components/FunctionClick'
+import ClassClick from './components/ClassClick'
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Counter />
-        <Greet1 name="Shubham" age="30" />
-      </header>
+      <header className="App-header">React Learning</header>
+      <body className="App-body">
+        <FunctionClick />
+        <ClassClick />
+      </body>
     </div>
   );
 }
