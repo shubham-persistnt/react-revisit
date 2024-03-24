@@ -2,10 +2,10 @@ import React, {Component} from 'react'
 
 class Counter extends Component{
   constructor(){
-  	super()
-  	this.state = {
-  		count: 0
-  	}
+    super()
+    this.state = {
+      count: 0
+    }
   }
 
   increment(incrementBy){
@@ -13,13 +13,14 @@ class Counter extends Component{
   }
 
   render(){
-  	return(
-  		<div>
-  			<div>Count : {this.state.count}</div>
-  			<button onClick={()=>this.increment(1)}>increment count</button>
+    const {count} = this.state
+    return(
+      <div>
+        <div>Count : {count}</div>
+        <button onClick={()=>this.increment(1)}>increment count</button>
         <button onClick={()=>this.increment(5)}>increment 5</button>
-  		</div>
-  	)
+      </div>
+    )
   }
 }
 

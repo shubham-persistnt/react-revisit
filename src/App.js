@@ -14,6 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Counter />
+        <Greet1 name="Shubham" age="30" />
       </header>
     </div>
   );
