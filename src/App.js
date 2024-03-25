@@ -9,15 +9,14 @@ import WelcomeVisitor from './components/WelcomeVisitor'
 import Counter from './components/Counter'
 import FunctionClick from './components/FunctionClick'
 import ClassClick from './components/ClassClick'
-
+import EventBind from './components/EventBind'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">React Learning</header>
       <body className="App-body">
-        <FunctionClick />
-        <ClassClick />
+        <EventBind />
       </body>
     </div>
   );
