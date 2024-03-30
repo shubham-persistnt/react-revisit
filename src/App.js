@@ -13,12 +13,13 @@ import EventBind from './components/EventBind'
 import ParentComponent from './components/ParentComponent'
 import UserGreeting from './components/UserGreeting'
 import NameList from './components/NameList'
+import PersonList from './components/PersonList'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">React Learning</header>
-      <NameList />
+      <PersonList />
     </div>
   );
 }
