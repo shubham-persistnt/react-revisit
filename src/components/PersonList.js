@@ -16,14 +16,14 @@ function PersonList(){
         skills: 'Ruby on Rails'
       },
       {
-        id: 1,
+        id: 3,
         name: 'Danky',
         age: 50,
         skills: 'React'
       }
     ]
     
-  const personList = persons.map(person => <Person person={person} />)
+  const personList = persons.map(person => <Person key={person.id} person={person} />)
 
   return <div>{personList}</div>
 }
